@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop – Deas Rew</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="logo-text glow">DEAS REW</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+    <div class="cart-icon" onclick="openCart()">🛒 <span id="cart-count">0</span></div>
+</header>
+
+<section class="products">
+
+    <div class="product fade-in">
+        <img src="https://i.imgur.com/8s8Q2P2.png">
+        <h3>Black Luxury Hoodie</h3>
+        <p class="gold-text">$45</p>
+        <button onclick="addToCart('Black Luxury Hoodie', 45)" class="btn gold-btn">Add to Cart</button>
+    </div>
+
+    <div class="product fade-in">
+        <img src="https://i.imgur.com/zs4M8nQ.png">
+        <h3>Distressed Denim</h3>
+        <p class="gold-text">$60</p>
+        <button onclick="addToCart('Distressed Denim', 60)" class="btn gold-btn">Add to Cart</button>
+    </div>
+
+</section>
+
+<div id="cart" class="cart-panel">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <button class="btn gold-btn">Checkout</button>
+</div>
+
+</body>
+</html>
